@@ -53,7 +53,7 @@ function App() {
           </Row>
         </Row>
       </Container>
-      <footer className=" footer text-white mt-auto py-3" >
+      <footer className=" footer text-white mt-4 " >
 
         <MyFooter/>
       </footer>

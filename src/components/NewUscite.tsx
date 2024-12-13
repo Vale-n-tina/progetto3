@@ -12,10 +12,10 @@ const NewUscite=()=>{
       }
 
 const [musics, setmusics]=useState<ApiResponse>()
- console.log( "musicaaa",musics)
+ 
 
     const GetMusic=()=>{
-    fetch("https://striveschool-api.herokuapp.com/api/deezer/search?q=fedez")
+    fetch("https://striveschool-api.herokuapp.com/api/deezer/search?q=noyz narcos")
     .then((response)=>{
         if(response.ok){
             return response.json()
@@ -38,9 +38,9 @@ useEffect(()=>{
     return(
         <>
         {
-            musics?.data?.slice(0,10 ).map((track)=>{
+            musics?.data?.slice(0,10 ).map((track, i)=>{
                 return(
-                    <Col  >
+                    <Col key={i} >
                       <CardNewMusic track={track}/>   
                       </Col>
                 )
