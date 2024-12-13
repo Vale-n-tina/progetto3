@@ -4,7 +4,7 @@
 
 .sfondo{
   background-color: #1F1F1F;
-  height: 100vh;
+ 
 }
 .hr{
   color: #363636 ;
@@ -13,3 +13,8 @@
 .slick-list{
   padding: 0 !important;
 }
+.item{
+  background-color: #2A2A2A !important;
+  color: #ED5566 !important;
+}
+
