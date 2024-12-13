@@ -21,17 +21,17 @@ function App() {
       <div className="sfondo">
         <MyNavbar />
         <Container fluid>
-          <Row>
-            <Col>
-              <h2 className=" text-light mt-4">Novità</h2>
-              <hr className="hr" />
-            </Col>
-          </Row>
           <Routes>
             <Route
               path="/"
               element={
                 <>
+                  <Row>
+                    <Col>
+                      <h2 className=" text-light mt-4">Novità</h2>
+                      <hr className="hr" />
+                    </Col>
+                  </Row>
                   <Col>
                     <MyCarousel />
                   </Col>
@@ -69,8 +69,7 @@ function App() {
               }
             />
             <Route path="accedi" element={<PageAccedi />} />
-            <Route path="*"
-            element={<MyError/>}/>
+            <Route path="*" element={<MyError />} />
           </Routes>
         </Container>
         <footer className=" footer text-white mt-4 ">
