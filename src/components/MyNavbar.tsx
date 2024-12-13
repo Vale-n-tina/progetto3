@@ -1,4 +1,5 @@
 import { Navbar, Container, Nav } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 function MyNavbar() {
   return (
@@ -16,7 +17,9 @@ function MyNavbar() {
 
           />
         </Navbar.Brand>
-        <Nav.Link href="#features" className="text-danger fw-bolder">Accedi</Nav.Link>
+        <Link to="accedi">
+        <div  className="text-danger fw-bolder nav-link text-decoration-none">Accedi</div>
+        </Link>
       </Container>
     </Navbar>
   );
